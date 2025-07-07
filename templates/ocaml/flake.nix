@@ -31,7 +31,7 @@
           ## - or force ocamlfind to be a certain version:
           # ocamlfind = "1.9.2";
         };
-        scope = on.buildDuneProject { } "ocaml_nix" ./. query;
+        scope = on.buildDuneProject { } "PROJECT_NAME" ./. query;
         overlay = final: prev: {
           # You can add overrides here
         };
