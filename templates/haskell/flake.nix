@@ -5,7 +5,7 @@
   outputs = { self, nixpkgs, utils }: utils.lib.eachDefaultSystem (system:
     let
       pkgs = nixpkgs.legacyPackages.${system};
-      hPkgs = pkgs.haskell.packages."ghc984";
+      hPkgs = pkgs.haskell.packages."ghc9102";
 
       devTools = with hPkgs; [
         ghc
